@@ -1,1 +1,88 @@
-/* Write your CSS code here */
+.blog-item-container {
+  width: 95%;
+  max-width: 1000px;
+  margin-top: 40px;
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-item-details {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.blog-title {
+  font-family: 'Roboto';
+  font-size: 26px;
+  font-weight: 600;
+
+  color: #000000;
+
+  text-align: center;
+
+  align-self: center;
+}
+
+.blog-author-container {
+  display: flex;
+  align-items: center;
+}
+
+.author-avatar {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+  border: 0 solid;
+  border-radius: 15px;
+}
+
+.author-name {
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 400;
+
+  color: #000000;
+}
+
+.thumbnail-image {
+  width: 100%;
+  max-width: 600px;
+  border: 0 solid;
+  border-radius: 4px;
+
+  flex-shrink: 1;
+}
+
+.blog-content {
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 400;
+
+  color: #2f4f4f;
+}
+
+@media (max-width: 768px) {
+  .blog-title {
+    font-size: 16px;
+  }
+
+  .author-name {
+    font-size: 15px;
+  }
+
+  .blog-content {
+    font-size: 15px;
+  }
+
+  .blog-item-details-container {
+    padding: 8px;
+  }
+}
